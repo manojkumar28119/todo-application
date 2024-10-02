@@ -1,0 +1,79 @@
+### Register User
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "testuser@example.com",
+  "name": "Test User",
+  "password": "testpassword"
+}
+
+### Login User
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+### Get All Todos for a User
+POST http://localhost:5000/todos
+Content-Type: application/json
+
+{
+  "user_id": "5bed9686-5eaa-47b6-95ca-9797d734cd1d"
+}
+
+### Add a New Todo
+POST http://localhost:5000/add-todo
+Content-Type: application/json
+
+{
+  "user_id": "5bed9686-5eaa-47b6-95ca-9797d734cd1d",
+  "todo": "Learn Node.js",
+  "status": "Done",
+  "description":"i love u"
+}
+
+### Update Todo Status
+PUT http://localhost:3005/change-status
+Content-Type: application/json
+
+{
+  "todo_id": "46614bba-8742-4529-8a98-4cb288e5dc34",
+  "status": "inProgress"
+}
+
+### Start Timer for a Todo
+POST http://localhost:3005/start-timer
+Content-Type: application/json
+
+{
+  "todo_id": "46614bba-8742-4529-8a98-4cb288e5dc34"
+}
+
+### Pause Timer for a Todo
+POST http://localhost:3005/pause-timer
+Content-Type: application/json
+
+{
+  "todo_id": "46614bba-8742-4529-8a98-4cb288e5dc34"
+}
+
+### Reset Timer for a Todo
+POST http://localhost:3000/reset-timer
+Content-Type: application/json
+
+{
+  "todo_id": "53b47640-4bd2-4aba-b611-ca51fe2a6b05"
+}
+
+### 
+GET  http://localhost:5000/timer-data
+Content-Type: application/json
+
+{
+  "todo_id": "655f7868-182c-4441-891e-98d6a15c1a99"
+}

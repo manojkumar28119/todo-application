@@ -1,0 +1,82 @@
+  .label-container {
+    background-color: #e6f6ff;
+    border: 1px solid #4c63b6;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    color: #000;
+    background-color: #FABC3F;
+    font-weight: 500;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-width: 0px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width:578px) {
+    .label-container {
+      width: 100%;
+    }
+  }
+
+  .checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+
+  .checkbox-label {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 600;
+    width: 82%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+  }
+  .delete-icon {
+    padding: 15px;
+  }
+
+  .checked {
+    text-decoration: line-through;
+  }
+
+  .timer-card {
+    width: 100%;
+  }
+
+  .timer {
+    font-size: 30px;
+  }
+
+  .delete-icon-container {
+      position: absolute;
+      right: 10px;
+      top: 3px;
+      cursor: pointer;
+  }
+
+  .btn {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
